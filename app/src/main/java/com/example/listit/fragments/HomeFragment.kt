@@ -80,7 +80,7 @@ class HomeFragment : Fragment(R.layout.fragment_home), SearchView.OnQueryTextLis
         }
     }
 
-    private fun searchNote(query: String?) {
+    private fun searchTask(query: String?) {
         val searchQuery = "%$query"
 
         taskViewModel.searchTask(searchQuery).observe(this) { list ->
@@ -94,7 +94,7 @@ class HomeFragment : Fragment(R.layout.fragment_home), SearchView.OnQueryTextLis
 
     override fun onQueryTextChange(newText: String?): Boolean {
         if (newText != null) {
-            searchNote(newText)
+            searchTask(newText)
         }
         return true
     }

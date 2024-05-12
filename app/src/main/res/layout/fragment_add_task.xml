@@ -19,7 +19,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/aclonica"
-            android:text="Add Task."
+            android:text="@string/add_task"
             android:textColor="@color/secondary"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -31,24 +31,26 @@
             android:layout_below="@id/addTaskHeading"
             android:layout_marginTop="16dp"
             android:background="@drawable/border"
+            android:backgroundTint="#80FFFFFF"
             android:fontFamily="@font/anonymous_pro_bold"
-            android:hint="Enter the title"
+            android:hint="@string/enter_the_title"
             android:maxLines="1"
             android:padding="12dp"
             android:textSize="20sp" />
 
         <EditText
             android:id="@+id/addTaskDescription"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:hint="Enter the description"
-            android:gravity="top"
-            android:padding="12dp"
-            android:textSize="18sp"
-            android:fontFamily="@font/anonymous_pro_bold"
-            android:background="@drawable/border"
+            android:layout_width="399dp"
+            android:layout_height="274dp"
             android:layout_below="@id/addTaskTitle"
-            android:layout_marginTop="12dp" />
+            android:layout_marginTop="12dp"
+            android:background="@drawable/border"
+            android:backgroundTint="#80FFFFFF"
+            android:fontFamily="@font/anonymous_pro_bold"
+            android:gravity="top"
+            android:hint="@string/enter_the_description"
+            android:padding="12dp"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/priorityLabel"
@@ -58,7 +60,7 @@
             android:layout_alignParentStart="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="390dp"
-            android:text="Priority"
+            android:text="@string/priority"
             android:textColor="@color/secondary"
             android:fontFamily="@font/aclonica"
             android:textSize="18sp"
@@ -67,33 +69,33 @@
         <Spinner
             android:id="@+id/addTaskPriority"
             style="@style/Widget.AppCompat.Spinner.DropDown.ActionBar"
-            android:layout_width="310dp"
-            android:layout_height="63dp"
+            android:layout_width="399dp"
+            android:layout_height="61dp"
             android:layout_below="@id/priorityLabel"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="12dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="@color/ternary"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/border"
+            android:backgroundTint="#80FFFFFF"
             android:entries="@array/priority_levels"
             android:padding="12dp"
             android:spinnerMode="dropdown" />
 
         <EditText
             android:id="@+id/addTaskDeadline"
-            android:layout_width="337dp"
-            android:layout_height="61dp"
+            android:layout_width="385dp"
+            android:layout_height="62dp"
             android:layout_below="@id/addTaskPriority"
             android:layout_alignParentStart="true"
             android:layout_marginTop="37dp"
             android:background="@drawable/border"
+            android:backgroundTint="#80FFFFFF"
             android:fontFamily="@font/anonymous_pro_bold"
-            android:inputType="datetime"
-            android:textColor="@color/ternary"
             android:gravity="top"
-            android:hint="Enter the deadline"
+            android:hint="@string/enter_the_deadline"
+            android:inputType="datetime"
             android:padding="12dp"
+            android:textColor="@color/ternary"
             android:textSize="18sp" />
 
 <!--        <TextView-->
@@ -104,6 +106,8 @@
 <!--            android:fontFamily="@font/anonymous_pro_bold"-->
 <!--            android:textColor="@color/secondary"-->
 <!--            />-->
+
+
 
     </RelativeLayout>
 </layout>
